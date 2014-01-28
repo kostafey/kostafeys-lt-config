@@ -10,7 +10,13 @@
 ;; of all the commands you can execute, start typing a word related to the thing you
 ;; want to do in between the square brackets (e.g. type "editor").
 
-{:+ {:app {}
+{:+ {:app {"ctrl-pageup" [:tabs.next]
+           "ctrl-pagedown" [:tabs.prev]}
 
      :editor {"alt-w" [:editor.watch.watch-selection]
-              "alt-shift-w" [:editor.watch.unwatch]}}}
+              "alt-shift-w" [:editor.watch.unwatch]
+              "alt-s" [:smart-indent-selection]
+              "ctrl-e" [:workspace.show]
+              "ctrl-/" [:toggle-comment-selection]
+              "ctrl-;" [:toggle-comment-selection]
+              "ctrl-m" [:toggle-console]}}}
