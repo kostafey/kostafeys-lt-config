@@ -13,12 +13,16 @@
      ;; The app tag is kind of like global scope. You assign behaviors that affect
      ;; all of Light Table here
      :app [(:lt.objs.style/set-skin "dark")
-           (:lt.objs.style/provide-theme "custom" "custom.css")]
+           (:lt.objs.style/provide-theme
+            "custom"
+            "C:/Documents and Settings/msk45792/Local Settings/Application Data/LightTable/settings/custom.css")
+;;            (:lt.objs.style/provide-theme "custom" (:lt.objs.files/lt-user-dir "settings/custom.css"))
+           (:lt.objs.app/run-on-init :window.maximize)
+           ]
 
      ;; The editor tag is applied to all editors
-
      :editor [:lt.objs.editor/no-wrap
-              (:lt.objs.style/set-theme "ibdknox") ;custom
+              (:lt.objs.style/set-theme "custom") ;custom ibdknox
               (:lt.objs.style/font-settings "consolas" 13)]
 
      ;; Here we can add behaviors to just clojure editors
