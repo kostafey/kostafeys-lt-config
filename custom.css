@@ -21,9 +21,9 @@
 
 .cm-s-custom span.cm-symbol {color: #bbb;}
 .cm-s-custom span.cm-variable {color: #ccc;}
-.cm-s-custom span.cm-string {color: #9cc;}
-.cm-s-custom span.cm-string-2 {color: #acf;}
-.cm-s-custom span.cm-number {color: #caca80;}
+.cm-s-custom span.cm-string {color: #7daf3b;}
+.cm-s-custom span.cm-string-2 {color: #8c0;}
+.cm-s-custom span.cm-number {color: #998;}
 .cm-s-custom span.cm-builtin {color: #aaa;}
 .cm-s-custom span.cm-keyword {color: #4bdf9d; }
 .cm-s-custom span.cm-qualifier {color: #ccc; }
